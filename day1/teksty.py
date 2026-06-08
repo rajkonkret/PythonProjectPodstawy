@@ -38,3 +38,21 @@ print(tekst.removesuffix("Świecie"))  # "Witaj "
 
 # strip() - usunięcie białych znaków
 print(tekst.removesuffix("Świecie").strip())  # "Witaj"
+
+encode_s = tekst.encode('utf-8')
+print(encode_s)
+# b'Witaj \xc5\x9awiecie'
+# b - bajty
+print(type(encode_s))  # <class 'bytes'>
+# \xc5\x9a literka Ś w kodzie szesnastkowym
+
+print(encode_s.decode('utf-8'))
+# Witaj Świecie
+
+imie = "Radek"
+print(len(imie))  # pomiar długości, 5
+
+dane = "Świecie"
+print(len(dane))  # 7
+
+

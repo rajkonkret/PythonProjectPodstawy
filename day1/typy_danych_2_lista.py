@@ -141,3 +141,38 @@ lista.clear()  # kasuje wszystkie lementy z listy
 print(lista)  # []
 print(lista2)  # []
 print(lista_copy)  # ['Kamila', 'Tomek', 'Sylwia', 'Karolina']
+
+liczby = [54, 999, 12.34, 34, 567, 999]
+print(liczby)  # [54, 999, 12.34, 34, 567, 999]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)
+# [12.34, 34, 54, 567, 999, 999]
+
+liczby.append("A")
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort()
+# TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(lista_copy)  # ['Kamila', 'Tomek', 'Sylwia', 'Karolina']
+lista_copy.sort()
+print(lista_copy)  # ['Kamila', 'Karolina', 'Sylwia', 'Tomek']
+
+lista_copy.sort(reverse=True)
+print(lista_copy)
+# ['Tomek', 'Sylwia', 'Karolina', 'Kamila']
+
+lista_copy.append("Tomek")
+print(lista_copy)  # ['Tomek', 'Sylwia', 'Karolina', 'Kamila', 'Tomek']
+lista_copy.reverse()
+print(lista_copy)  # ['Tomek', 'Kamila', 'Karolina', 'Sylwia', 'Tomek'], tylko odwrócenie
+
+
+print(liczby)
+print(liczby[0:3])
+liczby[3] = 666
+print(liczby[-3])
+print(liczby)

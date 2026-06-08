@@ -55,4 +55,36 @@ print(len(imie))  # pomiar długości, 5
 dane = "Świecie"
 print(len(dane))  # 7
 
+# Mam na imię .....
+print("Mam na imię" + imie)  # Mam na imięRadek
+print("Mam na imię", imie)  # Mam na imię Radek
+print("Mam na imię", imie, sep="ooo")  # Mam na imięoooRadek
 
+# f-string , wstrzyknięcie zawartości zmiennej do tekstu
+tekst_format = f"Mam na imię {imie}"
+print(tekst_format)  # Mam na imię Radek
+
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+# "	Mam na imię Radek
+#  i lubię pythona"
+# \t - tab
+# \n - nowa linia
+# \b - backspace
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}!".format("Radek"))  # Witaj Radek!
+
+print("""
+    witaj
+Radek
+""")
+
+#     witaj
+# Radek
+
+"""
+Komentarz
+    wielolinijkowy (docstring)"""

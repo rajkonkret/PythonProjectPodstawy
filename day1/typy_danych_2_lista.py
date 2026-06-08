@@ -122,3 +122,22 @@ print(lista.pop())  # Monika, usunie ostatni element
 
 # sprawdzenie indeksu elementu
 print(lista.index("Sylwia"))  # index numer 2
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista2 = lista  # kopia referencji, adresu
+lista_copy = lista.copy()  # kopia eleemntów listy
+
+print(lista2)  # ['Kamila', 'Tomek', 'Sylwia', 'Karolina']
+print(lista)  # ['Kamila', 'Tomek', 'Sylwia', 'Karolina']
+
+lista.clear()  # kasuje wszystkie lementy z listy
+print(lista)  # []
+print(lista2)  # []
+print(lista_copy)  # ['Kamila', 'Tomek', 'Sylwia', 'Karolina']

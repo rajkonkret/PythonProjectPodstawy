@@ -26,3 +26,15 @@ print(tekst[5])  #
 
 print(tekst.index("Ś"))  # 6
 print(tekst.index("e"))  # 9, pierwszy z lewej
+
+print(tekst.lower().count("w"))  # występujw 2 razy
+
+# Witaj Świecie
+# 0123456789...
+print(tekst.count("j", 0, 4))  # -> 0123, z prawej strony ma zbiór otwarty, wystepuje 0 razy
+
+print(tekst.removeprefix("Witaj"))  # " Świecie"
+print(tekst.removesuffix("Świecie"))  # "Witaj "
+
+# strip() - usunięcie białych znaków
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"

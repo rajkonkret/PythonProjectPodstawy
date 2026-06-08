@@ -170,9 +170,21 @@ print(lista_copy)  # ['Tomek', 'Sylwia', 'Karolina', 'Kamila', 'Tomek']
 lista_copy.reverse()
 print(lista_copy)  # ['Tomek', 'Kamila', 'Karolina', 'Sylwia', 'Tomek'], tylko odwrócenie
 
-
 print(liczby)
 print(liczby[0:3])
 liczby[3] = 666
 print(liczby[-3])
 print(liczby)
+
+tekst = "Pyth on."
+
+lista = [tekst]
+print(lista)  # ['Pyth on.']
+
+# rozpakowanie sekwencji
+lista_tekst = list(tekst)
+print(lista_tekst)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Tomek', 'Kamila', 'Karolina', 'Sylwia', 'Tomek')

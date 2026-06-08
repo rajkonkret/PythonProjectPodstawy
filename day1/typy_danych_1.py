@@ -43,3 +43,28 @@ print(sys.float_info)
 #                min=2.2250738585072014e-308, min_exp=-1021,
 #                min_10_exp=-307, dig=15, mant_dig=53,
 #                epsilon=2.220446049250313e-16, radix=2, rounds=1)
+
+# typ logiczny
+# 0,1
+# fałsz, prawda
+# False, True
+
+czy_znasz_pythona = True
+print(czy_znasz_pythona)  # True
+print(type(czy_znasz_pythona))  # <class 'bool'>
+
+# rzutowanie na liczbe
+print(int(True))  # 1
+print(int(False))  # 0
+
+# bool() - rzutowaniena typ logiczny
+print(bool(1))  # True
+print(bool(0))  # False
+
+print(bool(100))  # True
+print(bool(200))  # True
+print(bool(-100))  # True
+
+print(bool(""))  # False
+print(bool("Radek"))  # True
+print(bool("0"))

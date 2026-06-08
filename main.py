@@ -17,3 +17,4 @@ if __name__ == '__main__':
 # 2x shift - wyszukiwarka, wheel, theme
 # (.venv) PS C:\Users\Szkolenie\PycharmProjects\PythonProjectPodstawy> python .\main.py
 # Hi, PyCharm
+# https://peps.python.org/pep-0008/ zasady formatowania kodu

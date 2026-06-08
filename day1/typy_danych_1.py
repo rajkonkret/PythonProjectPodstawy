@@ -68,3 +68,27 @@ print(bool(-100))  # True
 print(bool(""))  # False
 print(bool("Radek"))  # True
 print(bool("0"))
+
+# None - nie wiem, stan nieokroślony, odpowiednik null
+print(bool(None))  # False
+
+print(40 * "-")
+
+# operacje logiczne
+# and - i
+print(True and True)
+print(True and False)
+# ----------------------------------------
+# True
+# False
+
+print(40 * "-")
+# or - lub
+print(False or False)
+print(False or True)
+# ----------------------------------------
+# False
+# True
+
+# not - negacja
+print(not True)  # False

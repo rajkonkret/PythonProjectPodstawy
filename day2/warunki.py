@@ -90,37 +90,68 @@ print(f"Rabat wynosi: {rabat}")
 # napisac test z ...
 # trzy pytanie
 # dodac punktację
-
-punkty = 0
-
-odp = input("Podaj rok Chrztu Polski")  # str
-
-if odp.strip().casefold() == '966':
-    print("Odpowiedz prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Masz to w ksiązce na str 56")
-
-# spam += 1    spam = spam + 1
-# spam -= 1    spam = spam - 1
-# spam *= 1    spam = spam * 1
-# spam /= 1    spam = spam / 1
-# spam %= 1    spam = spam % 1
-
-odp = input("W którym roku była Bitwa pod Grunwaldem")  # str
-
-if odp.strip().casefold() == '1410':
-    print("Odpowiedz prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Masz to w ksiązce na str 189")
-
-print("Punkty:", punkty)
+#
+# punkty = 0
+#
+# odp = input("Podaj rok Chrztu Polski")  # str
+#
+# if odp.strip().casefold() == '966':
+#     print("Odpowiedz prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Masz to w ksiązce na str 56")
+#
+# # spam += 1    spam = spam + 1
+# # spam -= 1    spam = spam - 1
+# # spam *= 1    spam = spam * 1
+# # spam /= 1    spam = spam / 1
+# # spam %= 1    spam = spam % 1
+#
+# odp = input("W którym roku była Bitwa pod Grunwaldem")  # str
+#
+# if odp.strip().casefold() == '1410':
+#     print("Odpowiedz prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Masz to w ksiązce na str 189")
+#
+# print("Punkty:", punkty)
 
 # Podaj rok Chrztu Polski966
 # Odpowiedz prawidłowa
 # W którym roku była Bitwa pod Grunwaldem1410
 # Odpowiedz prawidłowa
 # Punkty: 2
+
+
+# zasymulejemy sytem zbierania logów
+# zmienna: typ systemu -> console, email, inny
+# console: "Stało się coś strasznego"
+# email: "system email"
+# gdy system jest email:
+# do listy błedów dodac tłumaczenie błedu
+# poziomy błędów: error, medium, inny
+
+lista_b = []
+# alert_system = "console"
+alert_system = "email"
+alert_error = "error"
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System email")
+    if alert_error == "error":
+        lista_b.append("Krytyczny")
+    elif alert_error == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny")
+else:
+    print("inny system")
+
+print(lista_b)
+# System email
+# ['Krytyczny']

@@ -58,3 +58,13 @@ print(name1, name2, name3)
 *name1, name2, name3 = tupla_imiona
 print(name1, name2, name3)
 # ['Zenek', 'Tomek'] Marek Ania
+
+# sorted() - sortowanie, zwracaposortowaną listę
+print(sorted(tupla_imiona))
+print(tupla_imiona)  # nie zmmienia oryginału
+
+sortowana = sorted(tupla_imiona)
+print(sortowana)  # ['Ania', 'Marek', 'Tomek', 'Zenek']
+
+lista = list(tupla_imiona)
+print(lista)  # ['Zenek', 'Tomek', 'Marek', 'Ania']

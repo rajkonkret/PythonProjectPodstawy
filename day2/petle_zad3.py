@@ -1,0 +1,25 @@
+# while - pętla sterowana warunkiem
+
+# pętla nieskonczona
+# while True:
+#     print("Komunikat")
+
+licznik = 0
+while True:
+    licznik += 1  # licznik = licznik + 1
+    print("Komunikat 2 !!")
+    if licznik > 10:
+        break  # przerwanie pętli
+
+print(licznik)
+
+print(50 * "-")
+licznik = 0
+while licznik < 10:
+    licznik += 1
+    print("Komunikat 3 !!!")
+
+# Komunikat 2 !!
+# 11
+# --------------------------------------------------
+# Komunikat 3 !!!

@@ -42,4 +42,35 @@ zmienna = zbior.pop()
 print(f"Zmienna: {zmienna}")  # Zmienna: 66
 print("Zmienna:", zmienna)  # Zmienna: 66
 
+# operacje na zbiorach
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
 
+# suma zbiorów
+print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 25, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 25, 667, 62}
+print(type(zbior_2))  # <class 'set'>
+
+# częśc wspólna
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# róznica
+print(zbior - zbior_2)  # {777, 22, 25}
+print(zbior.difference(zbior_2))  # {777, 22, 25}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
+
+# łączy zbiory, zmienia bazowy
+zbior.update(zbior_2)
+print(zbior)  # {777, 11, 44, 12.34, 18, 52, 22, 25, 667, 62}
+
+krotka = tuple(zbior)
+print(krotka)
+
+lista = list(zbior)
+print(lista)
+
+# in - sprawdzenie czy elemen istnieje w kolekcji
+print(667 in zbior)  # True
+print(667 in lista)  # True
+print(667 in krotka)  # True
+print(6777 in krotka)  # False

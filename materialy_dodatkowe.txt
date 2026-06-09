@@ -1,7 +1,11 @@
 -----------------------
 rajkonkret660@gmail.com
 https://play.google.com/store/apps/details?id=pl.rajkonkret.testjava2&hl=pl&gl=US
+https://github.com/rajkonkret/PythonProjectPodstawy
 
+https://fiszki-python.cytr.us/
+https://www.hackerrank.com/dashboard
+https://www.w3schools.com/python/python_intro.asp
 -----------------------
 ------------------------
 

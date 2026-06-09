@@ -107,3 +107,57 @@ for i, o in enumerate(imiona, start=1):
 # 2 Kamila
 # 3 Karolina
 # 4 Monika
+
+imiona = ['Sylwia', "Kamila", "Karolina", "Monika"]
+wiek = [23, 34, 32, 19]
+
+# Sylwia 23
+for o in imiona:
+    print(o, wiek[imiona.index(o)])
+# Sylwia 23
+# Kamila 34
+# Karolina 32
+# Monika 19
+
+imiona = ['Sylwia', "Kamila", "Karolina", "Monika", "Radek"]
+wiek = [23, 34, 32, 19]
+
+# zip() - łączy kolekcje
+for i in zip(imiona, wiek):
+    print(i)
+# ('Sylwia', 23)
+# ('Kamila', 34)
+# ('Karolina', 32)
+# ('Monika', 19)
+
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Sylwia 23
+# Kamila 34
+# Karolina 32
+# Monika 19
+
+# 0 Sylwia 23
+
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Sylwia', 23))
+# (1, ('Kamila', 34))
+# (2, ('Karolina', 32))
+# (3, ('Monika', 19))
+a, b = (0, ('Sylwia', 23))
+print(a, b)
+c, d = ('Sylwia', 23)
+print(c, d)  # Sylwia 23
+a, (c, d) = (0, ('Sylwia', 23))
+print(a, c, d)  # 0 Sylwia 23
+
+# imiona = ['Sylwia', "Kamila", "Karolina", "Monika", "Radek"]
+# wiek = [23, 34, 32, 19]
+
+for a, (c, d) in enumerate(zip(imiona, wiek)):
+    print(a, c, d)
+# 0 Sylwia 23
+# 1 Kamila 34
+# 2 Karolina 32
+# 3 Monika 19

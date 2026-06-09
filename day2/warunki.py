@@ -39,3 +39,19 @@ if odp:
 else:  # w innym przypadku, wartosc domyślna
     print("Zero -> False")
 # Zero -> False
+
+a = "Radek"
+# jezeli długosc tekstu jest większa niz 3 wypisac:
+# "długos wynosi: wartośc, więcej niż 3"
+
+if len(a) > 3:
+    print(f"Długośc wynosi: {len(a)}, więcej niz 3")
+
+n = len(a)
+if n > 3:
+    print(f"Długośc wynosi: {n}, więcej niz 3")
+# Długośc wynosi: 5, więcej niz 3
+
+# operator morsa, walrus operator
+if (n := len(a)) > 3:
+    print(f"Długośc wynosi: {n}, więcej niz 3")

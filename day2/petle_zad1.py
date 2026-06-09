@@ -49,3 +49,18 @@ for i in range(len(lista3)):  # range(5)
 for c in lista3:  # podstawi kolejny element
     print(c)
 
+for c in lista3:
+    if c > 4:
+        print(c, "Większe niż 4")
+    elif c == 4:
+        print("Równe 4")
+    else:
+        print("Mniejsze niz 4")
+    print(c)  # za kazdym przejsciem pętli
+print("Po zakonczeniu pętli")
+
+for i in range(-10, 0):
+    print(i)
+
+for i in range(10, 0, -2): # (start, stop, krok)
+    print(i)

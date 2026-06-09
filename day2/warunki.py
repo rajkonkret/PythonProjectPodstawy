@@ -66,6 +66,8 @@ zarobki = int(input("Podaj zarobki:"))
 podatek = 0
 if zarobki < 10_000:
     podatek = 0
+elif zarobki < 40_000:
+    podatek = 0.2
 elif zarobki < 100_000:
     podatek = 0.6
 else:

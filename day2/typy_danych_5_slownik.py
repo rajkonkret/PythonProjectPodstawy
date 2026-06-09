@@ -74,4 +74,34 @@ dict_small = {'x': 20}
 dict_small.update([("y", 3), ("z", 7)])
 print(dict_small)  # {'x': 20, 'y': 3, 'z': 7}
 
+# input() - mozliwosc wprowadzania danych np.:  z klawiatury
 
+# tekst = input("podaj imie:")
+# print(tekst)
+
+# podaj imie:Radek
+# Radek
+
+# napisac aplikację kalkulator
+# input zwraca str
+# a = int(input("Podaj liczbę a:"))
+# b = input("Podaj liczbę b:")
+#
+# print(int(a) + float(b))
+
+# napisac aplikacje słownik pol-ang
+pol_ang = {'pies': 'dog', "kot": 'cat', "dach": "roof"}
+print("Znam takie słówka:", pol_ang.keys())
+
+odp = input("Podaj słowko:")
+
+print(f"""
+Prawidłowa odpowiedź dla: {odp}
+to: {pol_ang.get(odp.strip().casefold(), "nie mam w słowniku")}
+""")
+
+# Znam takie słówka: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słowko:pies
+#
+# Prawidłowa odpowiedź dla: pies
+# to: dog

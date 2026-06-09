@@ -86,3 +86,41 @@ print(f"Rabat wynosi: {rabat}")
 
 rabat = 25 if sum_zam > 100 else 0
 print(f"Rabat wynosi: {rabat}")
+
+# napisac test z ...
+# trzy pytanie
+# dodac punktację
+
+punkty = 0
+
+odp = input("Podaj rok Chrztu Polski")  # str
+
+if odp.strip().casefold() == '966':
+    print("Odpowiedz prawidłowa")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Masz to w ksiązce na str 56")
+
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+
+odp = input("W którym roku była Bitwa pod Grunwaldem")  # str
+
+if odp.strip().casefold() == '1410':
+    print("Odpowiedz prawidłowa")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Masz to w ksiązce na str 189")
+
+print("Punkty:", punkty)
+
+# Podaj rok Chrztu Polski966
+# Odpowiedz prawidłowa
+# W którym roku była Bitwa pod Grunwaldem1410
+# Odpowiedz prawidłowa
+# Punkty: 2

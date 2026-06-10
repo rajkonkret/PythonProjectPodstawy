@@ -16,7 +16,7 @@ print(response.text)
 
 dane = response.json()
 print(type(dane))
-print(dane) # <class 'dict'>
+print(dane)  # <class 'dict'>
 # {'table': 'A', 'currency': 'euro',
 # 'code': 'EUR', 'rates': [
 # {'no': '110/A/NBP/2026', 'effectiveDate': '2026-06-10', 'mid': 4.2481}
@@ -29,6 +29,6 @@ for k in dane:
 # currency
 # code
 # rates
-print("Waluta:", dane['currency']) # Waluta: euro
+print("Waluta:", dane['currency'])  # Waluta: euro
 
-print("Kurs:", dane['rates'][0]['mid']) # Kurs: 4.2481
+print("Kurs:", dane['rates'][0]['mid'])  # Kurs: 4.2481

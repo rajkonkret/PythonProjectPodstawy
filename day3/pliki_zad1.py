@@ -23,7 +23,7 @@ with open("test.log", "w",  encoding="utf-8") as file:
 with open("test.log", "a",  encoding="utf-8") as file:
     file.write("dodane 2\n")
     file.write("dodane jedno 2\n")
-    file.write("dśodane jedno 2\n")
+    file.write("dśąodane jedno 2\n")
 
 with open('test.log', "r", encoding="utf-8") as fh:
     lines = fh.read()

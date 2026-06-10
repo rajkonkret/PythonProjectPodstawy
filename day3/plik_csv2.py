@@ -11,7 +11,7 @@ with open(filename, "r") as csv_f:
     print(dialect.delimiter)
     print(dialect.quotechar)
 
-    csv_f.seek(0) # ustaw odczyt na początek
+    csv_f.seek(0)  # ustaw odczyt na początek
     # csv_reader = csv.reader(csv_f, delimiter=";")
     csv_reader = csv.reader(csv_f, delimiter=dialect.delimiter)
 
